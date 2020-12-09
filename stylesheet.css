@@ -41,14 +41,16 @@ header{
 }
 .sidebar{
   background: #2f323a;
-  margin-top: 69px;
+  margin-top: 93px;
   padding-top: 30px;
   position: fixed;
   left: 0;
   width: 250px;
   height: 100%;
+  transition: 0.5s;
+  transition-property: left;
 }
-.sidebar .profile_image{
+.sidebar .profile-img{
   width: 100px;
   height: 100px;
   border-radius: 100px;
@@ -73,11 +75,11 @@ header{
 .sidebar a:hover{
   background: #19b3d3;
 }
-.side i{
+.sidebar i{
   padding-right: 10px;
 }
 label #sidebar-btn{
-  z-index:10;
+  z-index: 1;
   color:#fff;
   position: fixed;
   cursor: pointer;
@@ -89,4 +91,15 @@ label #sidebar-btn{
 }
 label #sidebar-btn:hover{
   color: #19b3d3;
+}
+#check:checked ~ .sidebar{
+  left: -190px;
+}
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
 }
