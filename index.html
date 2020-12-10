@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css"/>
-    <title>Animated Side Menu / Dashboard - JS</title>
+    <title>Responsive Sidebar Dashboard Template - JS</title>
   </head>
   <body>
 
     <input type="checkbox" id="check">
     <!-- HEADER AREA START ----------------------->
     <header>
-      <label for="sidebar-menu">
+      <label for="check">
         <i class="fas fa-bars" id="sidebar-btn"></i>
       </label>
       <div class="left-area">
@@ -30,10 +30,10 @@
       <!-- HEADER AREA END----------------------->
     <!-- SIDEBAR START  --------------------------->
     <div class="sidebar">
-      <center>
+      <div class="profile-info">
         <img src="img/male-user.jpg" alt="profile pic" class="profile-img">
         <h4>Jake</h4>
-      </center>
+      </div>
       <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
       <a href="#"><i class="fas fa-cogs"></i><span>Componets</span></a>
       <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
@@ -42,6 +42,11 @@
       <a href="#"><i class="fas fa-sliders"></i><span>Settings</span></a>
     </div>
     <!-- SIDEBAR END  --------------------------->
+    <!-- ---------------START CONTENT AREA (RIGHT SIDE) ----------->
+    <div class="content">
+
+    </div>
+    <!-- ---------------END CONTENT AREA (RIGHT SIDE) ----------->
 
   <script type="text/javascript" src="main.js"></script>
   </body>
