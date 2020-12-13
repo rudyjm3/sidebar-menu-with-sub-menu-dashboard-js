@@ -23,6 +23,31 @@ header{
 .left-area span{
   color: #1dc4e7;
 }
+.right-area .notification{
+  float: right;
+  text-decoration: none;
+  margin-top: -30px;
+  margin-right: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: color;
+}
+.right-area .notification:hover{
+  color: #0d9dbb;
+}
+.right-area .notification .notification-alert{
+  position: relative;
+  top: -11px;
+  left: -11px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background: red;
+  padding: 1px 6px;
+  border-radius: 100%;
+}
 .logout_btn{
   padding: 5px;
   background: #19b3d3;
@@ -41,11 +66,12 @@ header{
   background: #0d9dbb;
   text-decoration: none;
 }
+
 .sidebar{
   z-index: 1;
   top: 0;
   background: #2f323a;
-  margin-top: 93px;
+  margin-top: 97px;
   padding-top: 30px;
   position: fixed;
   left: 0;
@@ -120,7 +146,7 @@ label #sidebar-btn:hover{
   /*width: calc(100% - 250px);*/
   margin-top: 93px;
   padding: 20px;
-  margin-left: 250px;
+  margin-left: 248px;
   background: url(img/mountain-background-green.jpg) no-repeat;
   background-position: center;
   background-size: cover;
